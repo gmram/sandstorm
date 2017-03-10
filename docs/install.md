@@ -362,6 +362,14 @@ This will remove all files installed by Sandstorm, but will not delete your user
 wish to remove user data as well, do:
 
     sandstorm uninstall --delete-user-data
+    
+make sure that the /opt/sandstorm directory has also been removed using
+
+    ls /opt/
+    
+If it hasn't, you can remove the directory using
+
+    sudo rm -r /opt/sandstorm
 
 If you installed Sandstorm with default options, the following actions will fully remove
 Sandstorm. If you customized the install, you'll need to change these commands accordingly.
